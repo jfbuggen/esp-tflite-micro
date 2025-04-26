@@ -1,0 +1,33 @@
+{
+    "name": "esp-tflite-micro",
+    "version": "1.3.3.1",
+    "description": "TensorFlow Lite Micro for Espressif Chipsets",
+    "keywords": "tflite",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/espressif/esp-tflite-micro.git"
+    },
+    "export": {
+        "include": [
+            "tensorflow/*",
+            "third_party/*",
+            "library.json",
+            "README.md",
+            "LICENSE",
+            "signal/*",
+            "scripts",
+            "examples"
+        ]
+    },
+    "license": "Apache-2.0",
+    "build": {
+        "includeDir": ".",
+        "srcDir": "libsodium/src/libsodium",
+        "flags": [
+            "-I third_party/gemmlowp",
+            "-I third_party/flatbuffers/include",
+            "-I third_party/ruy",
+            "-I third_party/kissfft",
+        ],
+    }
+}
