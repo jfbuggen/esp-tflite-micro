@@ -27,7 +27,10 @@
             "-I third_party/gemmlowp",
             "-I third_party/flatbuffers/include",
             "-I third_party/ruy",
-            "-I third_party/kissfft"
+            "-I third_party/kissfft",
+            "-D TF_LITE_STATIC_MEMORY",
+            "-D DTF_LITE_DISABLE_X86_NEON",
+            "-O3"
         ],
         "srcFilter": "+<*> -<examples>"
     }
