@@ -22,12 +22,13 @@
     "license": "Apache-2.0",
     "build": {
         "includeDir": ".",
-        "srcDir": "libsodium/src/libsodium",
+        "srcDir": ".",
         "flags": [
             "-I third_party/gemmlowp",
             "-I third_party/flatbuffers/include",
             "-I third_party/ruy",
             "-I third_party/kissfft"
-        ]
+        ],
+        "srcFilter": "+<*> -<examples>"
     }
 }
