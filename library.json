@@ -28,6 +28,7 @@
             "-I third_party/flatbuffers/include",
             "-I third_party/ruy",
             "-I third_party/kissfft",
+            "-D ESP_NN",
             "-D TF_LITE_STATIC_MEMORY",
             "-D DTF_LITE_DISABLE_X86_NEON",
             "-O3"
