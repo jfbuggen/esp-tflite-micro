@@ -30,7 +30,7 @@
             "-I third_party/kissfft",
             "-D ESP_NN",
             "-D TF_LITE_STATIC_MEMORY",
-            "-D DTF_LITE_DISABLE_X86_NEON"
+            "-D DTF_LITE_DISABLE_X86_NEON",
 	    "-Wno-error=attributes",
   	    "-Wno-error=shadow",
   	    "-Wno-maybe-uninitialized",
