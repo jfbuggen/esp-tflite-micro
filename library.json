@@ -20,6 +20,7 @@
         ]
     },
     "license": "Apache-2.0",
+    "dependencies": { "esp-nn": "https://github.com/espressif/esp-nn.git" }
     "build": {
         "includeDir": ".",
         "srcDir": ".",
